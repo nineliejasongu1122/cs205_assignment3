@@ -128,6 +128,7 @@ public class MyService extends Service {
             // broadcast message that download is complete
 
             Intent intent = new Intent("DOWNLOAD_COMPLETE");
+            //intent.putStringArrayListExtra("test", (ArrayList<String>) test);
             sendBroadcast(intent);
 
             stopSelf(msg.arg1);
